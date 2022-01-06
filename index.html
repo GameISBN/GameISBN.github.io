@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="今天发游戏版号了吗？">
+    <meta name="author" content="GameISBN">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="./date_calc.js"></script>
+    <title>今天发游戏版号了吗？</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="now_date">
+            <h2>现在是：</h2>
+            <h2 id="TimeDay"></h2>
+            <h2 id="TimeClock"></h2>
+            <script>
+                var myVar = setInterval(function () {
+                    myTimer()
+                }, 1000);
+
+                function myTimer() {
+                    var time = new Date();
+                    var d = time.toLocaleDateString();
+                    var c = time.toLocaleTimeString();
+                    document.getElementById("TimeDay").innerHTML = d;
+                    document.getElementById("TimeClock").innerHTML = c;
+                }
+            </script>
+        </div>
+        <div class="last">
+            <h2>上次游戏版号发放日期为：</h2>
+            <h2><a href="http://www.nppa.gov.cn/nppa/contents/320/76768.shtml">2021年7月22日</a></h2>
+        </div>
+        <div class="date-back">
+            <h2>已经有</h2>
+            <h2><span id="result2"></span>天</h2>
+            <script type="text/javascript">
+                calb()
+            </script>
+            <h2>没有发放游戏版号了。</h2>
+        </div>
+    </div>
+    <div class="link">
+        <h2>版号审批查询：<a href="http://www.nppa.gov.cn/nppa/channels/317.shtml">国家新闻出版署-游戏审批结果</a></h2>
+    </div>
+</body>
+
+</html>

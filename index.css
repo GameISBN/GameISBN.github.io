@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    text-align: center;
+}
+
+h2 {
+    margin-right: 0.5%;
+}
+
+.now_date {
+    display: flex;
+    flex-direction: row;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+}
+
+.date-back {
+    display: flex;
+    flex-direction: row;
+}
