@@ -25,3 +25,31 @@ h2 {
     display: flex;
     flex-direction: row;
 }
+
+.img-1 {
+    width: 1523px;
+    height: 550px;
+    background: url(./img/按月统计的国产游戏版号发布数量.png) no-repeat;
+    background-size: 100%;
+}
+
+.img-2 {
+    width: 1523px;
+    height: 550px;
+    background: url(./img/按年统计的国产游戏版号发布数量.png) no-repeat;
+    background-size: 100%;
+}
+
+.img-3 {
+    width: 1523px;
+    height: 550px;
+    background: url(./img/按年统计的进口游戏版号发布数量.png) no-repeat;
+    background-size: 100%;
+}
+
+hr {
+    height: 5px;
+    width: 100%;
+    border: none;
+    border-top: 2px dotted #000000;
+}
