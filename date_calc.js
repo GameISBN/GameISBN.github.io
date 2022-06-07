@@ -1,3 +1,15 @@
+var myVar = setInterval(function () {
+    myTimer()
+}, 1000);
+
+function myTimer() {
+    var time = new Date();
+    var d = time.toLocaleDateString('zh-CN');
+    var c = time.toLocaleTimeString('zh-CN');
+    document.getElementById("TimeDay").innerHTML = d;
+    document.getElementById("TimeClock").innerHTML = c;
+}
+
 var hzWeek = new Array("日", "一", "二", "三", "四", "五", "六", "日");
 
 //获取星期

@@ -1,50 +1,42 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
 body {
+    margin: 0;
+    padding: 0;
+    background: url(https://cdn.cloudflare.steamstatic.com/steam/apps/271590/ss_54a59b51d9a3dbd5cf6b8d8745716b293633a50b.jpg?t=1618856444) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img
+{
+  opacity:0.8;
+}
+
+.article {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+body, .main, .link, .img, .back{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.main {
+.now_date, .last, .date-back {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    margin-bottom: 20px;
     text-align: center;
-}
-
-h2 {
-    margin-right: 0.5%;
-}
-
-.now_date {
-    display: flex;
-    flex-direction: row;
-}
-
-.last {
-    display: flex;
-    flex-direction: row;
-}
-
-.date-back {
-    display: flex;
-    flex-direction: row;
-}
-
-.img-1 {
-    width: 1523px;
-    height: 600px;
-    background: url(./img/按月统计的国产游戏版号发布数量.png) no-repeat;
-    background-size: 100%;
-}
-
-.img-2 {
-    width: 1523px;
-    height: 600px;
-    background: url(./img/按年统计的国产游戏版号发布数量.png) no-repeat;
-    background-size: 100%;
-}
-
-.img-3 {
-    width: 1523px;
-    height: 600px;
-    background: url(./img/按年统计的进口游戏版号发布数量.png) no-repeat;
-    background-size: 100%;
 }
 
 hr {

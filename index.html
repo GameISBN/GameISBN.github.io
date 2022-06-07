@@ -13,56 +13,60 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="now_date">
-            <h2>现在是：</h2>
-            <h2 id="TimeDay"></h2>
-            <h2 id="TimeClock"></h2>
-            <script>
-                var myVar = setInterval(function () {
-                    myTimer()
-                }, 1000);
-
-                function myTimer() {
-                    var time = new Date();
-                    var d = time.toLocaleDateString();
-                    var c = time.toLocaleTimeString();
-                    document.getElementById("TimeDay").innerHTML = d;
-                    document.getElementById("TimeClock").innerHTML = c;
-                }
-            </script>
+    <div class="article">
+        <div class="main">
+            <div class="title">
+                <h1>今天发游戏版号了吗？</h1>
+            </div>
+            <div class="now_date">
+                <h2>现在是：</h2>
+                <h2 id="TimeDay"></h2>&nbsp;
+                <h2 id="TimeClock"></h2>
+            </div>
+            <div class="last">
+                <h2>上次游戏版号发放日期为：</h2>
+                <h2><a href="http://www.nppa.gov.cn/nppa/contents/320/104244.shtml">2022年6月7日-2022年6月份国产网络游戏审批信息</a>
+                </h2>
+            </div>
+            <div class="date-back">
+                <h2>已经有</h2>&nbsp;
+                <h2><span id="result2"></span>天</h2>
+                <script type="text/javascript">
+                    calb()
+                </script>&nbsp;
+                <h2>没有发放游戏版号了。</h2>
+            </div>
         </div>
-        <div class="last">
-            <h2>上次游戏版号发放日期为：</h2>
-            <h2><a href="http://www.nppa.gov.cn/nppa/contents/320/104244.shtml">2022年6月7日-2022年6月份国产网络游戏审批信息</a></h2>
+
+        <hr />
+
+        <div class="link">
+            <h1>相关链接</h1>
+            <h2>版号审批查询：<a href="http://www.nppa.gov.cn/nppa/channels/317.shtml">国家新闻出版署-游戏审批结果</a></h2>
         </div>
-        <div class="date-back">
-            <h2>已经有</h2>
-            <h2><span id="result2"></span>天</h2>
-            <script type="text/javascript">
-                calb()
-            </script>
-            <h2>没有发放游戏版号了。</h2>
+
+        <hr />
+
+        <div class="img">
+            <h1>版号趋势</h1>
+            <img src="./img/按月统计的国产游戏版号发布数量.png" width="75%"></imgs>
+            &nbsp;
+            <img src="./img/按年统计的国产游戏版号发布数量.png" width="75%"></img>
+            &nbsp;
+            <img src="./img/按年统计的进口游戏版号发布数量.png" width="75%"></img>
+            <p>一切数据请以<a href="http://www.nppa.gov.cn/">国家新闻出版署</a>为准。</p>
         </div>
+
+        
+
+        <hr />
+
+        <footer>
+            <p>作者：<a href="https://github.com/GameISBN">GameISBN</a></p>
+            <p>GitHub：<a href="https://github.com/GameISBN/GameISBN.github.io">GameISBN.github.io</a></p>
+        </footer>
+
     </div>
-
-    <hr />
-
-    <div class="link">
-        <h2>版号审批查询：<a href="http://www.nppa.gov.cn/nppa/channels/317.shtml">国家新闻出版署-游戏审批结果</a></h2>
-    </div>
-
-    <hr />
-
-
-
-    <div class="img">
-        <h2>版号发放趋势：</h2>
-        <div class="img-1"></div>
-        <div class="img-2"></div>
-        <div class="img-3"></div>
-    </div>
-
 </body>
 
 </html>
