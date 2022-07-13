@@ -20,8 +20,8 @@ var date = new Date();
 function calb() {
 
     y2 = 2022;
-    m2 = 6;
-    d2 = 7;
+    m2 = 7;
+    d2 = 12;
 
 
     y3 = date.getFullYear();
